@@ -1,0 +1,75 @@
+
+@import '~bootstrap/dist/css/bootstrap.css';
+
+nav {
+  background-color:rgb(206, 206, 206);
+  height: 60px;
+}
+
+nav > button {
+  color: black;
+  float: right;
+}
+
+.room {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 60px);
+}
+
+.room > .tabs {
+  margin-left: 0;
+  width:200px;
+}
+
+.room > .active-tab {
+  float: right;
+  margin-right: 0;
+  right: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tab {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.tab-left {
+  width: 100%;
+}
+
+// .tab-right {
+//   // width: 250px;
+//   // padding: 15px;
+// }
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.messages {
+  height: 100%;
+}
+
+.message-input {
+  padding-bottom: 10px;
+}
+
+.player {
+  height: 80%;
+}
+
+.queue {
+  height: 20%;
+}
