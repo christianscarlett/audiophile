@@ -4,9 +4,25 @@ import Tab from '../components/Tab';
 
 class Room extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      srcPath: "../assets/bangarang.mp3"
+    };
+  }
+
+  /**
+   * @param {string} tab 
+   */
+  changeTab(path) {
+    console.log('changetab', path);
+    this.setState({srcPath: path});
+  }
+
   render() {
+    console.log('room render', this.state.srcPath);
     let key = 0;
-    let tabs = [<a href="/" key={key++}>tab</a>];
+    let tabs = ['../assets/bangarang.mp3', '../assets/alonewithyou.mp3'].map(path => <button type="button" class="btn btn-primary" key={key++} onClick={() => this.changeTab(path)}>tab</button>);
     return (
       <div class='container-fluid room'>
         <div class='tabs container'>
@@ -14,7 +30,7 @@ class Room extends Component {
           {tabs}
         </div>
         <div class='container-fluid active-tab'>
-          <Tab />
+          <Tab srcPath={this.state.srcPath} />
         </div>
       </div>
     );

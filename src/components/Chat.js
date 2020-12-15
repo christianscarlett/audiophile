@@ -10,7 +10,7 @@ class Chat extends Component {
 
         </div>
         <div class='message-input'>
-          <button class='btn btn-danger'>Send</button>
+          <button class='btn btn-danger'>send</button>
           <input type='text'></input>
         </div>
       </div>

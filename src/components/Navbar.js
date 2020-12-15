@@ -6,8 +6,8 @@ class AudiophileNavbar extends Component {
       <nav class="navbar justify-content-between">
         <a class="navbar-brand" href="#/">audiophile</a>
         <div>
-          <button class='btn btn-secondary ml-1'>Join Room</button>
-          <button class='btn btn-secondary ml-1'>Create Room</button>
+          <button class='btn btn-secondary ml-1'>join room</button>
+          <button class='btn btn-secondary ml-1'>create room</button>
         </div>
       </nav>
     );

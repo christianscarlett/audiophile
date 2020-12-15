@@ -23,7 +23,6 @@ class Player extends Component {
 
     // select our play button
     const playButton = this.playButton.current;
-    console.log(this.playButton);
     playButton.addEventListener('click', function() {
       // check if context is in suspended state (autoplay policy)
       if (audioContext.state === 'suspended') {
@@ -46,7 +45,7 @@ class Player extends Component {
     return (
       <div class="container-fluid player">
         <button ref={this.playButton} type="button" class="btn btn-primary" data-playing="false" role="switch" aria-checked="false" >
-          Play/Pause
+          play/pause
         </button>
         {/* <input type="range" id="volume" min="-10" max="10" step="0.01" ></input> */}
       </div>
